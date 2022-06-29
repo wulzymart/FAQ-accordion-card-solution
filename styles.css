@@ -1,0 +1,108 @@
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+}
+.container {
+  width: 70%;
+  padding: 30px;
+  margin: 20vh auto;
+  display: flex;
+  border-radius: 30px;
+  padding: 60px;
+  overflow: hidden;
+  background-color: white;
+  background-image: url(images/bg-pattern-desktop.svg);
+  background-size: 67%;
+  background-repeat: no-repeat;
+  background-position: -100%;
+}
+.faq {
+  width: 50%;
+  padding: 0 60px;
+}
+.box {
+  position: absolute;
+  left: 5%;
+  top: 50%;
+}
+.faq-image-box {
+  width: 50%;
+  display: flex;
+}
+.img-desktop {
+  width: 100%;
+  margin-left: -100px;
+}
+.img-mobile {
+  display: none;
+}
+.accordion {
+  border-bottom: 1px solid hsl(240, 6%, 50%);
+  display: flex;
+  flex-direction: column;
+}
+
+.question-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+p {
+  font-size: 12px;
+  line-height: 2;
+  color: hsl(240, 6%, 50%);
+}
+.bolden {
+  font-weight: 700;
+  color: hsl(237, 12%, 33%);
+}
+.hidden {
+  display: none;
+}
+.invert {
+  transform: rotate(180deg);
+}
+@media (max-width: 375px) {
+  .container {
+    display: block;
+    width: 90%;
+    padding: 0;
+    overflow: visible;
+    background-color: white;
+    background-image: url(images/bg-pattern-mobile.svg);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center 0%;
+  }
+  h1 {
+    text-align: center;
+  }
+  .box {
+    display: none;
+  }
+  .img-mobile {
+    display: block;
+    width: 80%;
+    margin: auto;
+    margin-top: -117px;
+    padding-bottom: 27px;
+    /* background: url(images/bg-pattern-mobile.svg);
+    background-size: contain; */
+  }
+  .img-desktop {
+    display: none;
+  }
+  .faq {
+    margin: auto;
+    width: 100%;
+    padding: 20px 0 60px;
+  }
+  .faq-image-box {
+    width: 100%;
+    height: fit-content;
+  }
+  .accordion {
+    width: 80%;
+    margin: auto;
+  }
+}
